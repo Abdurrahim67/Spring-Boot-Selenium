@@ -1,0 +1,16 @@
+
+ -->   //@Value("${PATH}") //$ dolar isarei ve parantezli ise application.properties deki degeri alir.Eger application.propertiesdeki karsiligi yoksa hata verir.
+    //@Value("PATH")     //$ isareti ve parantez yoksa direkt bu degeri PATH geri verir.
+    //private String path;
+
+    //@Value("${fruits}")
+    //	private List<String> fruits;//liste olarak geri verir
+
+    // @Value("${timeout:55}") //timeout degeri properties de tanimlanmissa  o degeri döndürür, eger tanimlanmamissa burdaki 55 degerini döndürür
+    // private int timeout;
+
+
+-->@Bean = sadece manuell configuration yaptigimizda kullaniyoruz örnek olarak Faker classi.Yani disaridan bir kütüphane kullaniyorsak.Ve classi
+@Configuration annotation u kullaniyoruz.
+
+not: Config package i her zaman Application classinin icinde oldigi packagein icinde olmali.Aksi takdirde SpringbooApplication baslatildiginda config pacakg ini inject edemez.
